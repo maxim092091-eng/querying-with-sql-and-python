@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "querying-with-sql-and-python"
+version = "1.0.0"
+description = "Analyze the Chinook database using SQL and Python to answer business questions and present the results."
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "matplotlib",
+]
+
+
+[project.scripts]
+chinook-analysis = "querying_with_sql_and_python.main:main"
+
+
+[dependency-groups]
+dev = [
+    "pytest",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
