@@ -1,7 +1,7 @@
 import sqlite3
 from pathlib import Path
 
-DATABASE_PATH = Path(__file__).resolve().parents[2] / "data" / "Chinook_Sqlite.sqlite"
+DATABASE_PATH = Path(__file__).resolve().parent / "data" / "Chinook_Sqlite.sqlite"
 
 
 def get_connection(db_path: str | Path = DATABASE_PATH) -> sqlite3.Connection:

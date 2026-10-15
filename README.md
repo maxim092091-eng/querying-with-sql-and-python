@@ -81,10 +81,10 @@ chinook-analysis
 
 ```text
 querying-with-sql-and-python/
-├── data/
-|    └── Chinook_Sqlite.sqlite
 ├── src/
 │   └── querying_with_sql_and_python/
+|       ├── data/
+|       |      └── Chinook_Sqlite.sqlite
 │       ├── data_analysis.py
 │       ├── database.py
 │       └── main.py
